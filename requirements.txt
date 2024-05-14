@@ -1,0 +1,17 @@
+streamlit
+torch
+torchvision
+opencv-python-headless
+Pillow
+numpy
+pandas
+altair
+streamlit-webrtc
+efficientnet
+matplotlib
+tensorflow
+efficientnet-pytorch
+nltk
+twilio
+python-dotenv
+unidecode  
