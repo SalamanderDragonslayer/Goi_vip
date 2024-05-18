@@ -8,7 +8,26 @@ import torch.nn as nn
 import torchvision.transforms as transforms
 from efficientnet_pytorch import EfficientNet
 import streamlit as st
+def set_background_image():
+    page_bg_img = f"""
+    <style>
+    .stApp {{
+        background: url("https://img.upanh.tv/2024/05/18/111e99ded6dd68631.jpg");
+        background-size: cover
+    }}
+    </style>
+    """
+    st.markdown(page_bg_img, unsafe_allow_html=True)
 
+hide_streamlit_style = """
+                    <style>
+                    #MainMenu {visibility: hidden;}
+                    footer {visibility: hidden;}
+                    header {visibility: hidden;}
+                    </style>
+                    """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+set_background_image()
 st.set_page_config(layout="wide")
 st.header("Sinh trắc học vân tay")
 st.write(

@@ -29,7 +29,16 @@ model_path = r"face_shape_classifier.pth"
 train_dataset = {0: 'Khuôn mặt trái tim', 1: 'Khuôn mặt hình chữ nhật_Khuôn mặt dài', 2: 'Khuôn mặt trái xoan',
                  3: 'Khuôn mặt tròn', 4: 'Khuôn mặt vuông'}
 
-
+def set_background_image():
+    page_bg_img = f"""
+    <style>
+    .stApp {{
+        background: url("https://img.upanh.tv/2024/05/18/111e99ded6dd68631.jpg");
+        background-size: cover
+    }}
+    </style>
+    """
+    st.markdown(page_bg_img, unsafe_allow_html=True)
 class MyNormalize(object):
     def __init__(self, mean, std):
         self.mean = mean
@@ -130,7 +139,15 @@ def read_file_content(filename):
     with open(filename, 'r', encoding='utf-8') as file:
         return file.read()
 
-
+hide_streamlit_style = """
+                    <style>
+                    #MainMenu {visibility: hidden;}
+                    footer {visibility: hidden;}
+                    header {visibility: hidden;}
+                    </style>
+                    """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+set_background_image()
 st.title("Nhân tướng học khuôn mặt")
 
 # Lựa chọn giữa webcam và tải ảnh

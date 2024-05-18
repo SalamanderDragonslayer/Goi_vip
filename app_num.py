@@ -18,7 +18,16 @@ solinhhon = {
     "filename": None,
     "content": None
 }
-
+def set_background_image():
+    page_bg_img = f"""
+    <style>
+    .stApp {{
+        background: url("https://img.upanh.tv/2024/05/18/111e99ded6dd68631.jpg");
+        background-size: cover
+    }}
+    </style>
+    """
+    st.markdown(page_bg_img, unsafe_allow_html=True)
 
 # Hàm để đọc nội dung từ tệp văn bản
 def read_file_content(filename):
@@ -152,6 +161,15 @@ def format_date(day, month, year):
 
 
 def main():
+    hide_streamlit_style = """
+                    <style>
+                    #MainMenu {visibility: hidden;}
+                    footer {visibility: hidden;}
+                    header {visibility: hidden;}
+                    </style>
+                    """
+    st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+    set_background_image()
     st.title("Ứng dụng Tính Thần Số Học")
 
     # Hàng nhập ngày tháng năm
