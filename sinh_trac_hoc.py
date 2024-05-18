@@ -8,6 +8,7 @@ import torch.nn as nn
 import torchvision.transforms as transforms
 from efficientnet_pytorch import EfficientNet
 import streamlit as st
+
 def set_background_image():
     page_bg_img = f"""
     <style>
@@ -28,7 +29,6 @@ hide_streamlit_style = """
                     """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 set_background_image()
-st.set_page_config(layout="wide")
 st.header("Sinh trắc học vân tay")
 st.write(
     "Sinh trắc học vân tay là nghiên cứu về các đặc điểm vân tay để xác định tính cách và tương lai của một người.")
