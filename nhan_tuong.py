@@ -193,7 +193,7 @@ if option == "Webcam":
     st.markdown(
         "Lưu ý khi sử dụng:"
         " Bạn hãy mở camera và để app xác định khuôn mặt của bạn. Khi phát hiện ra nó sẽ khoanh vùng khuôn mặt. \n"
-        "NOTE : Nếu khuôn mặt không được phát hiện, bạn có thể thử chụp hình lại nhiều lần"
+        "\n NOTE : Nếu khuôn mặt không được phát hiện, bạn có thể thử chụp hình lại nhiều lần"
     )
 
     # -------------Sidebar Section------------------------------------------------
