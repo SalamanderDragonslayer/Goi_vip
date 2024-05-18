@@ -191,11 +191,10 @@ if option == "Webcam":
                                    help="Đặt độ dày của khung giới hạn",
                                    value=bbox_thickness)
     st.markdown(
-        "Luư Ý Khi sử dụng:"
+        "Lưu ý khi sử dụng:"
         " Bạn hãy mở camera và để app xác định khuôn mặt của bạn. Khi phát hiện ra nó sẽ khoanh vùng khuôn mặt. \n"
+        "NOTE : Nếu khuôn mặt không được phát hiện, bạn có thể thử chụp hình lại nhiều lần"
     )
-    st.warning("NOTE : Nếu khuôn mặt không được phát hiện, bạn có thể thử chụp hình lại nhiều lần")
-
 
     # -------------Sidebar Section------------------------------------------------
     # WEBRTC_CLIENT_SETTINGS = ClientSettings(
