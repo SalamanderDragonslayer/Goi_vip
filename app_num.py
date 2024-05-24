@@ -22,7 +22,7 @@ def set_background_image():
     page_bg_img = f"""
     <style>
     .stApp {{
-        background: url("https://img.upanh.tv/2024/05/20/43ccd61c63a32cd86.jpg");
+        background: url("https://img.upanh.tv/2024/05/24/4-wxLLDdDYg-transformed.png");
         background-size: cover
     }}
     </style>
