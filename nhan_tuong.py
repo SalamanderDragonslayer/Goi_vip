@@ -303,8 +303,6 @@ if option == "Webcam":
                     st.markdown("**Thông tin chi tiết:**")
                     st.text_area(" ", content, height=300)
 
-                    st.write("Để xem lí giải cụ thể, bạn hãy đăng kí gói vip của nhân tướng học ! ♥ ♥ ♥")
-
 
 
 elif option == "Image":
